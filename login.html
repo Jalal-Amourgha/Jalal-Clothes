@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/loto.png" alt="logo">
+        </div>
+        <nav>
+            <i class="fa-solid fa-bars menu" onclick="menutoggle()"></i>
+            <ul id="menuitems">
+                <li><a class="hovered" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Account</a></li>
+                <li><a href="add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="account-page">
+        <div class="container">
+            <div class="boxs">
+                <div>
+                    <img src="images/image1.png" alt="home-image">
+                </div>
+                <div>
+                    <div class="login"> 
+                        <div class="login-btns">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="Login">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button class="btn" type="submit">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+                        <form id="Register">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button class="btn" type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer" id="contact">
+        <div class="container">
+            <div class="boxs">
+                <div class="downloads">
+                    <h3>Donload Our App</h3>
+                    <p>Our App is for Android and ios.</p>
+                    <a class="first-link" href="#"><i class="fa-brands fa-google-play"></i>Google Play</a>
+                    <a class="second-link" href="#"><i class="fa-brands fa-apple"></i>App Store</a>
+                </div>
+                <div class="about-us">
+                    <img src="images/logo-footer.png" alt="logo">
+                    <p>Best Sportswear Store in the Internet.</p>
+                </div>
+                <div class="links">
+                    <h3>Previously</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h3>My Socials</h3>
+                    <ul>
+                        <li><a href="https://web.facebook.com/amour.gha12/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/amr___jalal/">Instagram</a></li>
+                        <li><a href="https://twitter.com/Amr_Jalal22">Twitter</a></li>
+                        <li><a href="https://github.com/Jalal-Amourgha">Git Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h5>&copy; Created By <span>Jalal Amourgha</span>  - 2023</h5>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
+<script>
+    var Login = document.getElementById("Login");
+    var Register = document.getElementById("Register");
+    var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            Register.style.transform = "translateX(0px)" 
+            Login.style.transform = "translateX(0px)"
+            Indicator.style.transform = "translateX(100px)"            
+        }
+
+        function login(){
+            Register.style.transform = "translateX(300px)" 
+            Login.style.transform = "translateX(300px)"   
+            Indicator.style.transform = "translateX(0px)"              
+        }
+</script>
+</html>

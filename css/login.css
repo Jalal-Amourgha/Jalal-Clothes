@@ -1,0 +1,92 @@
+.account-page .boxs {
+    display: grid;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    background: radial-gradient(#fff,#ffd6d6);
+    padding: 10%;
+}
+
+.account-page img{
+    max-width: 70%;
+}
+
+.login {
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    align-items: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.account-page span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.account-page .login-btns {
+    display: inline-block;
+    margin-left: 16%;
+}
+
+.account-page form {
+    max-width: 300px;
+    padding: 0 20px;
+    top: 130px;
+    position: absolute;
+    transition: 1s transform;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 8px 0px;
+    background-color: var(--background);
+    border-radius: 20px;
+}
+
+form a {
+    text-decoration: none;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+
+#Login {
+    left: -300px;
+}
+
+#Register {
+    left: 0;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background-color: var(--background);
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: 1s;
+}

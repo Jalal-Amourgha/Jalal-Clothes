@@ -29,10 +29,21 @@ select:focus {
 .page-btn span{
     border: 1px solid var(--background);
     padding: 10px;
+    transform:scale(0.7);
+    transition: 0.7s;
 }
 
 .page-btn a{
     text-decoration: none;
     color: var(--background);
     padding: 10px;
+}
+
+
+.page-btn span:hover {
+    background-color: var(--background);
+}
+
+.page-btn span:hover a{
+    color: white;
 }

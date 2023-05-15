@@ -1,0 +1,76 @@
+.table {
+    margin: 5% 10%;
+}
+
+table {
+    border-spacing: 0px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+thead {
+    background-color: var(--background);
+    color: white;
+}
+/* 
+thead td {
+    padding: 15px 0px;
+} */
+
+
+table .product {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+table .quantity {
+    width: 20%;
+}
+
+table input {
+    border: 1px solid var(--background);
+    width: 45px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+table input:focus {
+    border: 1px solid var(--background);
+    outline: none;
+}
+
+table h4 , table h5{
+    font-weight: normal;
+}
+
+.table img {
+    width: 100px;
+    margin-right: 2%;
+}
+
+table a {
+    text-decoration: none;
+    color: var(--background);
+}
+
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid var(--background);
+    width: 100%;
+    max-width: 350px;
+    margin: 2% 5% 0% 0%;
+}
+
+.total-price td {
+    padding-top: 15px;
+}
+
+.total-price td:last-child {
+    text-align: right;
+}

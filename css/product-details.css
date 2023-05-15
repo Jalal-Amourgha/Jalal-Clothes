@@ -1,0 +1,112 @@
+.details {
+    margin: 6% 13%;
+}
+
+.details .boxs {
+    display: grid;
+    grid-template-columns: repeat(2, calc(100% /2));
+}
+
+.details .box-one {
+    text-align: center;
+}
+
+.details .main {
+    width: 73%;
+}
+
+.details .img-option {
+    max-width: 17.7%;
+}
+
+.details p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.details h3 {
+    margin: 25px 0px;
+    color: #555;
+}
+
+.tails {
+    margin-bottom: 25px;
+}
+
+.details input {
+    border: 1px solid var(--background);
+    color: black;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+
+.details input:focus {
+    border: 1px solid var(--background);
+    outline: none;
+}
+
+
+.details a {
+    background: var(--background);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.details a:hover {
+    color: black;
+}
+
+.details h4 {
+    margin-bottom: 20px;
+}
+
+
+.col-img {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .review .boxs {
+        margin: 5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}

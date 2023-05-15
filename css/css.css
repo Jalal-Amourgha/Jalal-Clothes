@@ -12,13 +12,13 @@
     --background: #ff523b;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color);
-} */
+    background-color: var(--background);
+}
 
 
 body {
@@ -61,6 +61,14 @@ nav  a {
     color: #555;
 }
 
+nav  a:hover {
+    color: var(--background);
+}
+
+.hovered {
+    color: var(--background);
+}
+
 nav i {
     font-size: 1.3rem;
 }
@@ -79,7 +87,7 @@ nav .menu {
 }
 
 .home {
-    margin: 50px 70px;
+    margin: 5%;
 }
 
 .home .home-boxs {
@@ -124,7 +132,7 @@ nav .menu {
 /* C A T E G O R I E S */
 
 .categories {
-    margin: 70px;
+    margin: 5%;
 }
 
 .categories .boxs {
@@ -143,7 +151,7 @@ nav .menu {
 /*  F E A T U R E D P R O D U C T S */
 
 .featured-products {
-    margin: 70px;
+    margin: 5%;
 }
 
 .title {
@@ -173,6 +181,7 @@ nav .menu {
 .featured-products img {
     max-width: 70%;
     transition: 0.8s;
+    cursor: pointer;
 }
 
 .featured-products img:hover  {
@@ -201,7 +210,7 @@ nav .menu {
 /* L A T E S T P R O D U C T S */
 
 .latest-products {
-    margin: 70px;
+    margin: 5%;
 }
 
 .latest-products .boxs {
@@ -213,6 +222,7 @@ nav .menu {
 .latest-products img {
     max-width: 70%;
     transition: 0.8s;
+    cursor: pointer;
 }
 
 .latest-products img:hover  {
@@ -300,7 +310,7 @@ nav .menu {
 /* R E V I E W */
 
 .review {
-    margin: 70px;
+    margin: 5%;
 }
 
 .review .boxs {
@@ -349,7 +359,7 @@ nav .menu {
 /* S P O N S O R S */
 
 .sponsors {
-    margin: 100px 70px;
+    margin: 100px 5%;
 }
 
 .sponsors .boxs {
@@ -373,7 +383,7 @@ nav .menu {
 /* F O O T E R */
 
 .footer {
-    padding: 30px 70px;
+    padding: 30px 5%;
     background-color: black;
 }
 
@@ -466,7 +476,7 @@ span {
 
 @media (min-width: 1200px) {
     .container {
-        width: 1203px;
+        width: 100%;
     }
 }
 
