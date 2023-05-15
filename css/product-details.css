@@ -76,19 +76,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+    .details .boxs {
+        display: grid;
+        grid-template-columns: repeat(1, calc(100%));
+        grid-row-gap: 50px;
+    }
+    .details p {
+        margin-bottom: 10px;
+    }
+}
 
 @media (min-width: 768px) {
     .container {

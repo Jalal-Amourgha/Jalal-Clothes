@@ -483,12 +483,15 @@ span {
 
 
 @media (max-width: 768px) {
+    .home .home-boxs , .categories .boxs, .featured-products .boxs , .latest-products .boxs, .offer .boxs ,.review .boxs , .footer .boxs{
+        grid-template-columns: repeat(1, 100%);
+    }
     nav .menu {
         display: inline-block;
     
     }
    
-    .home-page nav  ul {
+     nav  ul {
         position: absolute;
         top: 70px;
         left: 0;
@@ -507,9 +510,14 @@ span {
         color: #fff;
     }
 
-    nav ul li a:hover {
-        color: var(--background);
+    .sponsors img {
+        max-width: 76px;
+        margin-top: 50px;
     }
 
+    .downloads , .about-us , .links {
+        margin-bottom: 50px;
+        text-align: center;
+    }
 }
 

@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="css/product-details.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="icon" href="images/icon.ico">
     <title>Product-Detail</title>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="images/loto.png" alt="logo">
+            <a href="index.html"><img src="images/loto.png" alt="logo"></a>
         </div>
         <nav>
             <i class="fa-solid fa-bars menu" onclick="menutoggle()"></i>
             <ul id="menuitems">
-                <li><a class="hovered" href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="# about">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="product-details.html">Iteam</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="login.html">Account</a></li>
+                <li><a href="add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -180,11 +181,10 @@
                 <div class="links">
                     <h3>Previously</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Account</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-details.html">Iteam</a></li>
+                        <li><a href="login.html">Account</a></li>
                     </ul>
                 </div>
                 <div class="socials">
@@ -202,6 +202,20 @@
     </div>
 </body>
 <script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(menuitems.style.maxHeight == "0px")
+            {
+            menuitems.style.maxHeight = "220px";
+            }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+    }
+</script>
 <script>
     var mainimg = document.getElementById("main-img");
     var smallimg = document.getElementsByClassName("small-imgs");

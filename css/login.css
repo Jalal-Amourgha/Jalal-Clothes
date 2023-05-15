@@ -90,3 +90,37 @@ form .btn:focus {
     transform: translateX(100px);
     transition: 1s;
 }
+
+@media (max-width: 768px) {
+    .account-page .boxs {
+        display: grid;
+        grid-template-columns: repeat(1, calc(100%));
+    }
+    .account-page img {
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+    nav .menu {
+        display: inline-block;
+    
+    }
+   
+    .home-page nav  ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li  {
+        display: block;
+        margin: 10px 50px 10px 0px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+}
